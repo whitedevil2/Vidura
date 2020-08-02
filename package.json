@@ -1,0 +1,26 @@
+{
+  "name": "search_enginee",
+  "version": "1.0.0",
+  "description": "This web app can be used to get top answers to the queries asked byParliament.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whitedevil2/Vidura.git"
+  },
+  "keywords": [
+    "nlp",
+    "ml",
+    "searching",
+    "data",
+    "analytics"
+  ],
+  "author": "Rahul Potnuru, Rakesh Mahanthi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whitedevil2/Vidura/issues"
+  },
+  "homepage": "https://github.com/whitedevil2/Vidura#readme"
+}
