@@ -1,0 +1,77 @@
+<html>
+  <link rel="shortcut icon" href="">
+<head>
+<style>
+   
+  h2
+  {
+    text-align:center;
+  }
+  .tab
+  {
+    display:inline-block;
+    margin-left:250px;
+  }
+</style>
+<title>Search</title>
+</head>
+
+<body bgcolor= #74992e>
+  <h2>
+    <b>PROJECT VIDURA</b>
+  </h2>
+  
+    <h3 style="text-align:left;"> 
+      <label for="questiontitle">
+        <span class="tab"></span>
+        <i>Question title:</i>
+      </label>
+
+    <input type="text" id="title" name="questiontitle"  placeholder="Type Your Question Title....">
+    
+    
+    <label for="question">
+      <i>Question:</i>
+    </label>
+
+    <input type="text" id="question" name="question"  placeholder="Type Your Question...."><br></h3>
+    
+    <h1 style="text-align:center">
+  
+      <input type="button" class="button" value="Search" id="search">
+       
+    </h1>
+
+    <p class="output" id="output">Output:</p>
+
+    <iframe src="" name="iframe_a" height="400px" width="50%" title="Iframe"></iframe>
+
+    <div  style="position:relative; top: -405px; left: 675px;">
+      <iframe src="" name="iframe_b" height="400px" width="50%" title="Iframe"></iframe>
+    </div>
+
+<!--Jquery library-->    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  
+<script type="text/javascript">
+
+//on clicking the seach button
+  $('#search').on('click', function() {
+    var title = $('#title').val();
+    var question = $('#question').val();
+
+    // Pass the json file to the page
+    var json = { title, question};
+
+    $.post("/submit", json, function(data, error, xhr) {
+           
+          document.getElementById("output").innerHTML = data.out;
+        
+    });
+});
+</script>
+
+  
+</body>
+</html>

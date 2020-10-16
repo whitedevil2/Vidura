@@ -1,5 +1,5 @@
 {
-  "name": "search_enginee",
+  "name": "vidura",
   "version": "1.0.0",
   "description": "This web app can be used to get top answers to the queries asked byParliament.",
   "main": "index.js",
@@ -22,5 +22,20 @@
   "bugs": {
     "url": "https://github.com/whitedevil2/Vidura/issues"
   },
-  "homepage": "https://github.com/whitedevil2/Vidura#readme"
+  "homepage": "https://github.com/whitedevil2/Vidura#readme",
+
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-brute": "^1.0.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "node-cmd": "^3.0.0"
+  }
 }
+
